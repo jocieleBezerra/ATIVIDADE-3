@@ -1,0 +1,166 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #f0f0f0;
+}
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.login-container {
+    width: 400px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side {
+    flex-grow: 1;
+    background-color: #7C3AED; 
+}
+
+/* ESTILO PARA OS TITULOS */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+/* ESTILO DOS TEXTOS */
+.subtext {
+    font-size: 0.75rem;
+    color: #666;
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+/* ESTILO DOS CAMPOS DE ENTRADA*/
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* CLASSE ESQUECEU SENHA */
+.password-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    position: relative; 
+}
+
+.password-group .forgot-password {
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    font-size: 0.9rem;
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+.password-group .forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* cCAMPO DE ENTRADA*/
+input::placeholder {
+    font-size: 0.9rem;  
+    color: #999;        
+}
+
+
+/* ESTILO DOS BOTÇOES */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #7C3AED;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a2d91; 
+}
+
+/* LINK DA INSCRIÇÃO */
+.signup-link {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.signup-link a {
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.signup-link a {
+    color: #7C3AED;
+    text-decoration: none;
+    font-weight: bold; /* nessa classe Deixei o "inscreva-se em negrito */
+}
+
+
+/* Media Query para telas menores que 768px (dispositivos pequenos) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alinha a área roxa e a caixa de login em coluna */
+    }
+
+    .login-container {
+        width: 100%; /* Ajusta a largura da caixa de login para ocupar toda a largura disponível */
+        margin-top: 10px; /* Espaço entre a barra roxa e a caixa de login */
+    }
+
+    .right-side {
+        width: 100%; /* Ajusta a largura da barra roxa para ocupar toda a largura disponível */
+        height: 150px; /* Ajuste a altura conforme necessário */
+        background: linear-gradient(135deg, #7C3AED, #E0C8F0); /* Gradiente roxo com nuances brancas */
+        position: relative;
+    }
+}
+
+
+

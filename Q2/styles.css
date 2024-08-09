@@ -1,0 +1,158 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: url('Background.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+
+    
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+    width: 90%;
+    max-width: 1000px;
+    height: 80%;
+    padding: 20px;
+}
+
+/*espaço ocupado pelo texto do 404 */
+
+.error-info {
+    max-width: 30%; 
+    margin-right: 300px;
+}
+
+/* Tamanho do título */
+
+.error-info h1 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+
+/* Tamanho do subtexto */ 
+
+.error-info p {
+    font-size: 0.75rem; 
+    margin-bottom: 50px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.back-button,
+.home-button {
+    font-size: 0.875rem; 
+    color: #fff; 
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #151557; 
+    transition: background-color 0.3s;
+}
+
+.back-button:hover,
+.home-button:hover {
+    background-color: #151557; 
+}
+
+.error-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem; 
+    color: #BF7BFB; 
+}
+
+.error-number {
+    font-size: 8rem; 
+    font-weight: bold;
+    color: #BF7BFB; 
+}
+
+
+/*Caracticas do Planetas*/
+.planet-icon {
+    font-size: 6rem; 
+    color: #BF7BFB; 
+    margin: 0 10px; 
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+    .error-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .error-info {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: left; 
+    }
+
+    .error-icon {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-info h1 {
+        font-size: 1.75rem;
+    }
+
+    .error-info p {
+        font-size: 1rem;
+    }
+
+    .back-button,
+    .home-button {
+        font-size: 0.75rem;
+        padding: 8px 16px;
+    }
+
+    .error-icon {
+        font-size: 4rem;
+    }
+
+    .error-number {
+        font-size: 3rem;
+    }
+
+    .planet-icon {
+        font-size: 3rem;
+    }
+}
